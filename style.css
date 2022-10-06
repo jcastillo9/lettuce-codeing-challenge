@@ -228,11 +228,13 @@ h3 {
 @media (max-width: 768px) {
 
     .nav-bar {
+        display: none;
         padding: 0 3rem;
         margin: 1rem;
     }
 
     .nav-menu {
+        display: none;
         margin-left: 2rem;
     }
 
@@ -324,6 +326,8 @@ h3 {
     }
     
     .right-landing {
+        margin: 0;
+        width: 100%;
         object-position: 80%;
 
     }
@@ -331,8 +335,7 @@ h3 {
     .reservation {
         display: block;
     }
-    .reserve-form { 
-        border: 2px solid red;   
+    .reserve-form {        
         display: block;
         flex-wrap: wrap;
         flex-direction: column;
