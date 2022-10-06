@@ -72,6 +72,7 @@ body {
     margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 .reserve-form, .customer-info {    
@@ -83,7 +84,6 @@ body {
     display: none;
 }
 .form-inputs {
-    margin-right: -4px;
     height: 2.25rem;
     width: 20%;
     text-align: center;
@@ -94,6 +94,7 @@ select, input {
     width: 20%;
     height: 2.5rem;
     padding:0;
+    margin-right: -4px;
 }
 
 .reserve-btn {
@@ -327,17 +328,20 @@ h3 {
     .right-landing {
         margin: 0;
         width: 100%;
-        object-position: 79%;
+        object-position: 80%;
 
     }
 
-    .reservation {
-        display: block;
-    }
-    .reserve-form {        
-        display: block;
-        flex-wrap: wrap;
+    .reserve, .customer-form {   
+        display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        /* white-space: pre; */
+    }
+
+    select, input, .form-inputs {
+        width: 40%;
+       margin: auto;
     }
     .page-section{  
         display: block;
@@ -363,7 +367,9 @@ h3 {
         width: 100%;
         /* margin: auto; */
     }
-
+    .right-text {
+        position: initial;
+    }
 
     .left-text, .right-text{
         width: 100%;
