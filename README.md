@@ -1,4 +1,4 @@
-# lettuce-coding-challenge
+# LEY-coding-challenge
 
 ## Acceptance Criteria
 
