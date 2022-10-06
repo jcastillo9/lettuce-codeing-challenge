@@ -148,20 +148,20 @@ button, .submit-btn {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.left-img{ 
+.right-img{ 
     object-fit: cover;
     width: 350px;
     height: 350px;
     z-index: 3;
     position: relative;
-    left: 68%;
+    left: 72%;
 }
 
 .right-text {
     float: right;
 }
 
-.right-img {
+.left-img {
     position: relative;
     object-fit: none;
     object-position: center center;
@@ -269,7 +269,7 @@ h3 {
         width: 100%;
     }
 
-    .left-img{ 
+    .right-img{ 
         width: 50%;
         left: 0;
         width: 400px;
@@ -280,7 +280,7 @@ h3 {
         left: -50%;
     }
     
-    .right-img {
+    .left-img {
         width: 50%;
         left: -50%;
         width: 400px;
@@ -353,12 +353,12 @@ h3 {
         padding:0;
     }
 
-    .right-img {
+    .left-img {
        left: 0;
        margin-top: 2rem;
     }
 
-    .left-img {
+    .right-img {
         object-fit: cover;
     }
     .right-img, .left-img {
