@@ -134,8 +134,8 @@ h2 {
 
 .left-text, .right-text{
     width: 55%;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 button, .submit-btn {
@@ -154,7 +154,7 @@ button, .submit-btn {
     height: 350px;
     z-index: 3;
     position: relative;
-    left: 70.5%;
+    left: 63%;
 }
 
 .right-text {
@@ -168,7 +168,7 @@ button, .submit-btn {
     width: 350px;
     z-index: 3;
     height: 350px;
-    right: -5%;
+    right: -3%;
 }
 
 footer {
@@ -203,7 +203,9 @@ h3 {
     font-family: 'Playfair Display SC', serif;
 
 }
-
+footer {
+    width: 100%
+}
 .footer-links {
     font-size: small;
      margin: auto;
@@ -246,8 +248,9 @@ h3 {
 
     .right-landing {
         object-position: 85%;
-        width: 100vw;
-        margin: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-right:0;
     }
 
     .page-section{  
@@ -255,20 +258,14 @@ h3 {
     }
 
     .description {  
-        left: 0;
-        right: 0;
-        margin: auto;  
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-family: 'Montserrat', sans-serif;
+        display:flex;
+        align-content: center;
+        width: 50vw;
         position: relative;
-        z-index: 2;
     }
 
     .left-text, .right-text{
-        width: 50%;
-        /* margin:0; */
+        width: 100%;
     }
 
     .left-img{ 
@@ -276,16 +273,17 @@ h3 {
         left: 0;
         width: 400px;
         height: 400px;
-        object-fit: fill;
     }
     
     .right-text {
-        float: right;
-        width: 50%;
+        left: -50%;
     }
     
     .right-img {
+        width: 50%;
         left: -50%;
+        width: 400px;
+        height: 400px;
     }
 
     .footer-info {
