@@ -203,9 +203,7 @@ h3 {
     font-family: 'Playfair Display SC', serif;
 
 }
-footer {
-    width: 100%
-}
+
 .footer-links {
     font-size: small;
      margin: auto;
@@ -249,8 +247,8 @@ footer {
     .right-landing {
         object-position: 85%;
         width: 100%;
-        margin-left: 0;
-        margin-right:0;
+        left: 0;
+        right:0;
     }
 
     .page-section{  
