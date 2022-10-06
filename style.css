@@ -245,7 +245,7 @@ select, input {
     }
 
     .right-landing {
-        object-position: 85%;
+        object-position: 80%;
         width: 100%;
         margin:0;
     }
@@ -296,45 +296,21 @@ select, input {
     .aba-logo {
        width: 4rem;
     }
-    header{
-        /* position: fixed; */
-  /* right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1030; */
-
-        /* background-color: white; */
-    }
 
     .toggle-button {
         display: flex;
         z-index: 7;
     }
     .nav-bar {
-        /* display: block; */
-        justify-content: space-between;
         flex-direction: column;
-        align-items: flex-start;
-        /* position: fixed; */
-        /* text-align: right; */
-        /* top:100%; */
-        /* right:0; */
     }
 
     .nav-menu {
         padding:0;
-        /* border: 2px solid red; */
         flex-direction: column;
         border: none;
         width:100%;
         display: none;
-        /* position: fixed; */
-        margin:0;
-        z-index: 10;
-        /* flex-direction: column;
-        margin:0;
-        padding:0;
-        display: block; */
     }
     
     .nav-item {
@@ -343,7 +319,6 @@ select, input {
 
     .nav-link {
         font-size: 1rem;
-        padding: .5rem 1rem;
     }
 
     .nav-menu.active {
@@ -351,8 +326,6 @@ select, input {
     }
     
     .right-landing {
-        margin: 0;
-        width: 100%;
         object-position: 77%;
 
     }
@@ -360,50 +333,27 @@ select, input {
     .reserve, .customer-form {   
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        /* white-space: pre; */
     }
 
     select, input, .form-inputs {
-        width: 40%;
-       margin: auto;
+        width: 50%;
+        margin: auto;
     }
     .page-section{  
         display: block;
-        z-index: 0;
-
     }
 
     .description {  
-        position: relative;
         margin-bottom: 2rem;
-        margin-top: 2rem;
         border: none;
-        padding:0;
     }
 
-    .left-img {
-       left: 0;
-       margin-top: 2rem;
-    }
-
-    .right-img {
-        object-fit: cover;
-    }
-    .right-img, .left-img {
+    .right-img, .left-img, .left-text, .right-text {
         width: 100%;
-        /* margin: auto; */
-    }
-    .right-text {
-        position: initial;
+        margin: auto;
     }
 
-    .left-text, .right-text{
-        width: 100%;
-        margin:0;
-    }
-
-    footer {
+    .footer-section {
         background-size: cover;
     }
     .footer-links {

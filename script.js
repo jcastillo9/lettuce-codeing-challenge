@@ -26,5 +26,3 @@ function confirmReservation(event) {
     customerForm.style.display = "none"
     reserveContainer.innerHTML = "Success! Your reservation has been received!"
 }
-
-
