@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img class="aba-logo" src="./images/Aba-Logo.png" alt="aba-logo" />
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#">Reserve</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Group Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" target="_blank">Team</a></li>
+        </ul>
+       
+      </nav>
+    </header>
+    <section>
+      <div class="landing-images">
+        <img class="left-landing" src="./images/up-47.jpg" alt="three plates" />
+        <img class="right-landing" src="./images/food.jpg" alt="salad bowl" />
+      </div>
+      <div class="reservation">
+        <h2>Make a reservation</h2>
+        <div class="reserve-form">
+          <form class="reserve">
+              <input class="form-inputs" placeholder="date"
+            type="date" id="start" name="trip-start"
+            min="2022-10-05" max="2023-12-31" required>
+        </input>
+              <select type="text" required>
+                <option value="" disabled selected hidden>Party Size</option>
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guest">2 Guests</option>
+              <option value="3 Guest">3 Guests</option>
+              <option value="4 Guest">4 Guests</option>
+              <option value="5 Guest">5 Guests</option>
+              <option value="6 Guest">6 Guests</option>
+              <option value="7 Guest">7 Guests</option>
+              <option value="8 Guest">8 Guests</option>
+              <option value="9 Guest">9 Guests</option>
+            </select><select type="text" required>
+                <option value="" disabled selected hidden>Time</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="2:30 PM">2:30 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="3:30 PM">3:30 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="4:30 PM">4:30 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="6:30 PM">6:30 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+                <option value="8:30 PM">8:30 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+                <option value="9:30 PM">9:30 PM</option>
+                <option value="10:00 PM">10:00 PM</option>
+                <option value="10:30 PM">10:30 PM</option>
+                <option value="11:00 PM">11:00 PM</option>
+                <option value="11:30 PM">11:30 PM</option>
+              </select><input type="submit" class="reserve-btn" value="Find a table">
+          </form>
+        <div class="customer-info">
+          <form class="customer-form">
+            <input
+            type="text"
+            class="form-inputs"
+            placeholder="Full Name"
+            required
+          /><input
+            type="email"
+            class="form-inputs"
+            placeholder="Email address"
+            required
+          /><input
+            placeholder="Phone Number 888 888 8888"
+            type="tel"
+            class="form-inputs"
+            name="telephone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          /><input type="submit" class="reserve-btn" value="Submit" />
+          </form>
+        </div>
+    </div>
+      </div>
+
+      <div class="page-section" id="group-dining">
+        <div class="description">
+          <div class="left-text">
+            <h2>Group dining at aba</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              quasi, veniam magnam libero, sunt veritatis rem inventore
+              consequuntur cum suscipit iusto repellat nesciunt ab, a itaque
+              nostrum dignissimos dolorum. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ex et repellendus repellat!
+              Praesentium, suscipit vitae earum eius.
+            </p>
+            <div class="button">
+              <button>Plan your party</button>
+            </div>
+          </div>
+        </div>
+        <img class="left-img" src="./images/up-35.jpg" alt="" />
+      </div>
+      <div class="page-section" id="wine-dinner">
+        <div class="description">
+          <div class="right-text">
+            <h2>Wine dinner</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              quasi, veniam magnam libero, sunt veritatis rem inventore
+              consequuntur cum suscipit iusto repellat nesciunt ab, a itaque
+              nostrum dignissimos dolorum.
+            </p>
+            <p>June 13th, 2018 at 7pm</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <img class="right-img" src="./images/up-35.jpg" alt="" />
+      </div>
+      <div class="page-section" id="about">
+        <div class="description">
+          <div class="left-text">
+            <h2>About Aba</h2>
+            <p>
+              Aba is a restaurant with a rooftop patio located in Chicago’s
+              historic Fulton Market District. Thi is Chef CJ Jacobson's second
+              restaurant with Lettuce Entertain You, and is an extension of Ema
+              (mother in Hebrew) in River North. Aba, meaning father in Hebrrew,
+              will incorporate Ema's style of cooking with a larger influence of
+              steak, raw and chilled seafood. The beverage program is crafted by
+              Wine Director Ryan Arnold and Mixologist Liz Pearce and showcases
+              Mediterranean-inspired rare wines and spirits.
+            </p>
+          </div>
+        </div>
+        <img class="left-img" src="./images/up-42.jpg" alt="tacos" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer-info">
+        <div class="contact-hours">
+          <h3>Hours</h3>
+          <p>
+            Tues - Thurs 12pm - 10pm
+            <br />
+            Fri 12pm - 1am
+            <br />
+            Sat 11am - 1am
+            <br />
+            Sun 10am - 9pm
+          </p>
+          <div class="contact-info">
+            <br />
+            <a href="#contact">Contact</a>
+            <br />
+            <a href="#newsletter">Newsletter</a>
+          </div>
+        </div>
+        <div class="location-info">
+          <h3>Locations</h3>
+          <p>
+            302 N Green Stree
+            <br />
+            3rd Floor
+            <br />
+            Chicago, IL 60607
+            <br />
+            <br />
+            773-645-1400
+          </p>
+        </div>
+      </div>
+      <div class="links">
+        <ul class="footer-links">
+          <li><a href="#diner">Frequent Diner</a></li>
+          <li><a href="#giftcards">Gift Cards</a></li>
+          <li><a href="#employment">Employment</a></li>
+          <li><a href="#leye">Leye.com</a></li>
+          <li><a href="#terms" target="_blank">Terms of Use</a></li>
+          <li><a href="#privacy" target="_blank">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

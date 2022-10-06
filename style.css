@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Playfair+Display+SC&display=swap');
+
+body {
+    background-image: url(./images/white-wood.jpeg) ;
+    margin: 0;
+}
+
+.aba-logo{
+    width: 8rem;
+}
+
+.nav-bar {
+    padding: 1rem 6rem;
+    display: flex; 
+}
+
+.nav-menu, .reservation, .description {
+    border-top-style: solid;
+    border-top-color: #a7a5a5;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #a7a5a5;
+    border-bottom-width: 1px;
+    width: 90%;
+    margin: auto;
+}
+.nav-menu { 
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.nav-menu li {
+    list-style-type: none;
+    font-size: 14px;
+    margin: .5rem;
+    letter-spacing: 1px;
+}
+
+.nav-menu a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black
+}
+
+.landing-images {
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+}
+
+.left-landing {
+    object-fit: cover;
+    object-position: 45% 85%;
+    width: 40vw;
+    margin: 1rem;
+}
+
+.right-landing {
+    object-fit: cover;
+    object-position: 100% 100% ;
+    width: 60vw;
+    margin: 1rem;
+}
+
+.reservation {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.reserve-form, .customer-info {    
+    text-align: center;
+    padding: 0;
+}
+
+.customer-info {
+    display: none;
+}
+.form-inputs {
+    margin-right: -4px;
+    height: 2.25rem;
+    width: 20%;
+    text-align: center;
+}
+
+select, input {
+    text-align: center;
+    width: 20%;
+    height: 2.5rem;
+    padding:0;
+}
+
+.reserve-btn {
+    border-radius: 2px;
+    border: none;
+    align-content: center;
+    height: 2.5rem;
+    margin-bottom: 0;
+    background-color: #012b44;
+    color: #ecfafd;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.page-section{  
+    margin-top: 4rem;    
+    margin-bottom: 4rem; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.description {      
+    left: 0;
+    right: 0;
+    margin: auto;  
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.left-text, .right-text{
+    width: 55%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+button, .submit-btn {
+    background-color: #012b44;
+    border: none;
+    color: #ecfafd;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+    padding: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.left-img{ 
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    z-index: 3;
+    position: relative;
+    left: 70.5%;
+}
+
+.right-text {
+    float: right;
+}
+
+.right-img {
+    position: relative;
+    object-fit: none;
+    object-position: center center;
+    width: 350px;
+    z-index: 3;
+    height: 350px;
+    right: -5%;
+}
+
+footer {
+    background-image: url(./images/Aba-wood-1.jpg);
+    padding: 1rem;
+    background-size: auto;
+    color: white;
+}
+
+.footer-info {
+    display:flex;
+    justify-content: space-around;
+    float: right;
+    width: 50%;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+}
+
+.contact-info, .contact-info a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+
+}
+
+.footer-links {
+    font-size: small;
+     margin: auto;
+     width: 70%;
+     display: flex;
+     justify-content: space-around;
+ }
+
+.footer-links li  {
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Screen Sizes 960px and smaller */
+@media (max-width: 768px) {
+
+    .nav-bar {
+        padding: 0 3rem;
+        margin: 1rem;
+    }
+
+    .nav-menu {
+        margin-left: 2rem;
+    }
+
+    .nav-menu li {
+        font-size: 10px;
+    }
+
+    .left-landing {
+        display: none;
+    }
+
+    .right-landing {
+        object-position: 85%;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .page-section{  
+        display: inline-flex;
+    }
+
+    .description {  
+        left: 0;
+        right: 0;
+        margin: auto;  
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+
+    .left-text, .right-text{
+        width: 50%;
+        /* margin:0; */
+    }
+
+    .left-img{ 
+        width: 50%;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        object-fit: fill;
+    }
+    
+    .right-text {
+        float: right;
+        width: 50%;
+    }
+    
+    .right-img {
+        left: -50%;
+    }
+
+    .footer-info {
+        display:block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    .footer-links {
+        font-size: x-small;
+     }
+
+}
+@media (max-width: 480px) {
+    .aba-logo {
+       width: 4rem;
+    }
+    header{
+        /* position: fixed; */
+        width: 100%;
+        z-index: 5;
+        /* background-color: white; */
+    }
+
+    .nav-bar {
+        display: block;
+        /* position: absolute; */
+        text-align: right;
+        top:100%;
+        /* right:0; */
+    }
+
+    .nav-manu {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+        display: block;
+    }
+    
+    .right-landing {
+        object-position: 80%;
+
+    }
+
+    .reservation {
+        display: block;
+    }
+    .reserve-form { 
+        border: 2px solid red;   
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .page-section{  
+        display: block;
+    }
+
+    .description {  
+        position: relative;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        border: none;
+        padding:0;
+    }
+
+    .right-img {
+       left: 0;
+       margin-top: 2rem;
+    }
+
+    .left-img {
+        object-fit: cover;
+    }
+    .right-img, .left-img {
+        width: 100%;
+        /* margin: auto; */
+    }
+
+
+    .left-text, .right-text{
+        width: 100%;
+        margin:0;
+    }
+
+    footer {
+        background-size: cover;
+    }
+    .footer-links {
+        font-size: 7px;
+     }
+}
