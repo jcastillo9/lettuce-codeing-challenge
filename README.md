@@ -1,4 +1,4 @@
-# lettuce-codeing-challenge
+# lettuce-coding-challenge
 
 ## Acceptance Criteria
 
