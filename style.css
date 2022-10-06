@@ -6,7 +6,20 @@ body {
 }
 
 .aba-logo{
-    width: 8rem;
+    width: 7rem;
+    margin: .75rem 2rem .75rem 0;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100vw;
+    top:0;
+}
+
+.nav-bar {
+    background-image: url(./images/white-wood.jpeg);
+    padding: .5rem 6rem;
+    display: flex; 
 }
 
 .toggle-button {
@@ -19,24 +32,29 @@ body {
     width: 30px;
     height: 21px;
 }
-header {
-    position: fixed;
-    width: 100vw;
-    /* height: 12rem; */
-}
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     border-radius: 10px;
 }
-.nav-bar {
-    background-image: url(./images/white-wood.jpeg);
-    /* position: relative; */
-    /* width: 100%; */
-    left:0;
-    padding: 1rem 6rem;
-    display: flex; 
+
+.nav-menu { 
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-size: 14px;
+    margin: .5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
 }
 
 .nav-menu, .reservation, .description {
@@ -48,36 +66,14 @@ header {
     border-bottom-width: 1px;
     width: 90%;
     margin: auto;
-}
-.nav-menu { 
-    font-family: 'Playfair Display SC', serif;
-    text-transform: uppercase;
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-.nav-menu li {
-    list-style-type: none;
-    font-size: 14px;
-    margin: .5rem;
     letter-spacing: 1px;
 }
 
-.nav-menu a {
-    padding: 0 10px;
-    text-decoration: none;
-    color: black
-}
 
 .landing-images {
     display: flex;
     width: 100vw;
-    height: 75vh;
-    ;
+    height: 100vh;
 }
 
 .left-landing {
@@ -89,7 +85,7 @@ header {
 
 .right-landing {
     object-fit: cover;
-    object-position: 100% 100% ;
+    object-position: 85% 100% ;
     width: 60vw;
     margin: 1rem;
 }
@@ -98,45 +94,42 @@ header {
     margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    flex-wrap: wrap;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .reserve-form, .customer-info {    
     text-align: center;
-    padding: 0;
 }
 
-.customer-info {
-    display: none;
-}
 .form-inputs {
-    height: 2.25rem;
-    width: 20%;
-    text-align: center;
+    height: 2.5rem;
+    margin-right: -6px;
 }
 
 select, input {
     text-align: center;
     width: 20%;
-    height: 2.5rem;
+    height: 2.75rem;
     padding:0;
-    margin-right: -4px;
+    margin-right: -6px;
+}
+.reserve-btn {
+    height: 2.75rem;
 }
 
-.reserve-btn {
-    border-radius: 2px;
+.reserve-btn, .section-btn {
     border: none;
-    align-content: center;
-    height: 2.5rem;
-    margin-bottom: 0;
     background-color: #012b44;
     color: #ecfafd;
 }
 
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Playfair Display SC', serif;
+.customer-info {
+    display: none;
 }
 
 .page-section{  
@@ -144,19 +137,16 @@ h2 {
     margin-bottom: 4rem; 
     display: flex;
     align-items: center;
-    align-content: center;
 }
 
 .description {      
     left: 0;
     right: 0;
-    margin: auto;  
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    z-index: 2;
 }
 
 .left-text, .right-text{
@@ -165,21 +155,18 @@ h2 {
     margin-right: 2rem;
 }
 
-button, .submit-btn {
-    background-color: #012b44;
-    border: none;
-    color: #ecfafd;
+.section-btn {
     text-transform: uppercase;
     font-family: 'Playfair Display SC', serif;
     padding: .5rem;
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
 .right-img{ 
     object-fit: cover;
     width: 350px;
     height: 350px;
-    z-index: 3;
     position: relative;
     left: 72%;
 }
@@ -191,23 +178,20 @@ button, .submit-btn {
 .left-img {
     position: relative;
     object-fit: none;
-    object-position: center center;
     width: 350px;
-    z-index: 3;
     height: 350px;
     right: -3%;
 }
 
-footer {
+.footer-section {
     background-image: url(./images/Aba-wood-1.jpg);
     padding: 1rem;
-    background-size: auto;
     color: white;
 }
 
 .footer-info {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     float: right;
     width: 50%;
     margin-top: 4rem;
@@ -216,9 +200,8 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+.footer-title {
     font-family: 'Playfair Display SC', serif;
-    text-transform: uppercase;
 }
 
 .contact-info, .contact-info a{
@@ -226,9 +209,7 @@ h3 {
     flex-direction: column;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-family: 'Playfair Display SC', serif;
-
 }
 
 .footer-links {
@@ -241,8 +222,6 @@ h3 {
 
 .footer-links li  {
     font-family: 'Playfair Display SC', serif;
-    text-transform: uppercase;
-    text-decoration: none;
     list-style-type: none;
 }
 
@@ -362,6 +341,7 @@ h3 {
         display: none;
         /* position: fixed; */
         margin:0;
+        z-index: 10;
         /* flex-direction: column;
         margin:0;
         padding:0;
@@ -373,6 +353,7 @@ h3 {
     }
 
     .nav-link {
+        font-size: 1rem;
         padding: .5rem 1rem;
     }
 
@@ -383,7 +364,7 @@ h3 {
     .right-landing {
         margin: 0;
         width: 100%;
-        object-position: 80%;
+        object-position: 77%;
 
     }
 
@@ -400,6 +381,8 @@ h3 {
     }
     .page-section{  
         display: block;
+        z-index: 0;
+
     }
 
     .description {  
