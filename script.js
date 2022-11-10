@@ -3,6 +3,13 @@ const navbarLinks = document.querySelector(".nav-menu")
 const reservationForm = document.querySelector(".reserve")
 const reserveContainer = document.querySelector('.reserve-form')
 const customerForm = document.querySelector(".customer-info")
+const todayDate = new Date(); // 10/11/2022
+const todayDateNew = todayDate.toLocaleDateString("en-CA"); // 9/17/2016
+const dateInput = document.querySelector('#start')
+const todayDateArray = todayDateNew.split("-")
+
+dateInput.setAttribute('min', todayDateNew)
+dateInput.setAttribute('max', todayDate.setMonth(todayDateArray[1] + 2).toLocaleDateString("en-CA"));
 
 toggleButton.addEventListener('click', navMenu)
 reservationForm.addEventListener('submit', customerInfo)

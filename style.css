@@ -79,7 +79,7 @@ body {
 
 .left-landing {
     object-fit: cover;
-    object-position: 45% 85%;
+    object-position: center;
     width: 40vw;
     margin: 1rem;
 }
@@ -105,19 +105,22 @@ body {
 
 .reserve-form, .customer-info {    
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .form-inputs {
     height: 2.5rem;
-    margin-right: -6px;
+    /* margin-right: -6px; */
 }
 
 select, input {
+    flex: 25%;
     text-align: center;
-    width: 20%;
+    /* width: 20%; */
     height: 2.75rem;
     padding:0;
-    margin-right: -6px;
+    /* margin-right: -6px; */
 }
 .reserve-btn {
     height: 2.75rem;
